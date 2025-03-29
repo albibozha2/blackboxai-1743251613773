@@ -1,0 +1,44 @@
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero section animation */
+.hero-content {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Mobile menu styles */
+@media (max-width: 767px) {
+    .mobile-menu {
+        display: none;
+    }
+    .mobile-menu.active {
+        display: block;
+        animation: fadeInUp 0.3s ease-out;
+    }
+}
+
+/* Button hover effects */
+.btn-primary {
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature card hover effects */
+.feature-card {
+    transition: all 0.3s ease;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+}
